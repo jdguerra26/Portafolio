@@ -1,0 +1,253 @@
+
+/* Utilidades Generales */
+:root{
+    --main-color: #197F5B;
+    --secundary-color: #EF9919;
+    --white1-color: #F9F5F2;
+    --white2-color: #FFFFFF;
+    --last-color: #F9F5F2;
+}
+
+body{
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+  width: 100%;
+  background-image: url('./imag/Estructura\ home\ desktop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 3rem;
+}
+
+header .name{
+  color: #EF9919;
+}
+
+header .container-photo{
+  position: relative;
+  width: 250px;
+  margin-top: 4rem;
+}
+
+header .container-photo .box{
+  position: absolute; 
+  background-color: var(--white2-color);
+  border-radius: 1rem;
+  padding: 10px 4px;
+  box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 24%);
+}
+
+header .container-photo .box-top {
+  top: 1rem;
+  left: -2rem;
+}
+
+header .container-photo .box-bottom {
+  bottom: 1rem;
+  right: -2rem;
+}
+
+header .container-photo .box p {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+header .icons-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+header .icons-socials .icon{
+  background-color: var(--white2-color);
+  padding: .5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+/* barra de navegación */
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+nav > a {
+  color: var(--white2-color)
+}
+
+nav>a:hover {
+  color: var(--secundary-color);
+}
+
+nav{
+  height: 100px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* Resto del header */
+
+.colorFont{
+  color: var(--white2-color);
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+h1{
+  color: white;
+}
+
+.image{
+  width: 100%;
+    border-radius: 60px;
+}
+
+/* main */
+
+
+main{
+  width: 100%;
+  margin: 0 auto;
+}
+
+main section{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-me .description{
+  border-left: 0.5rem solid var(--main-color);
+  padding-left: 2rem;
+}
+
+.about-me > button{
+  display: block;
+  margin: 0 auto;
+  background-color:  var(--main-color);
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 20px;
+  padding: 4px 1rem ;
+  cursor: pointer;
+}
+
+.about-me .container-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.about-me .card{
+  background-color: var(--last-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+}
+
+.about-me .card img{
+  height: 5rem
+}
+
+.about-me .card p, .about-me .card h3{
+  margin: 0;
+}
+
+.about-me .card .date {
+  font-size: 12px;
+}
+
+/* Habilities */
+
+.my-habilities .hability .title {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.my-habilities .hability .title span {
+  font-size: 12px;
+}
+
+.my-habilities .hability .title h5{
+  margin: 0;
+}
+
+.my-habilities .hability .bar{
+  height: 0.8rem;
+  background-color: #80808033;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.my-habilities .hability .bar .bar-progress{
+  height: 100%;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+}
+
+/* experience */
+
+.experience{
+  padding: 1rem 0;
+  background-color: var(--white1-color);
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.experience .container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.experience .container .contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.experience .container .contain img{
+  height: 50px;
+
+}
+
+.experience .container .contain h5 {
+  height: 50px;
+  margin: 0;
+}
+
+.experience .container .contain span {
+  text-align: center;
+  font-size: 14px;
+}

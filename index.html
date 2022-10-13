@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,16 +14,21 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Reem+Kufi+Fun:wght@400;700&display=swap"
     rel="stylesheet">
 </head>
+
 <body>
   <header>
 
-    <nav class="nav">
-      <a href="">Home</a>
-      <a href="">Acerca de mi</a>
-      <a href="">Mis habilidades</a>
-      <a href="">Experiencia</a>
-      <a href="">Mi portafolio</a>
-      <a href="">Contacto</a>
+    <div class="icon-menu">
+      <img src="./imag/menu.svg" alt="menu" onclick="showMenuMobile()">
+      <div id="bg-nav-mobile" class="bg" onclick="hideMenuMobile()"></div>
+    </div>
+    <nav id="nav" class="nav">
+      <a href="#">Home</a>
+      <a href="#about-me">Acerca de mi</a>
+      <a href="#my-habilities">Mis habilidades</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#portfolio">Mi portafolio</a>
+      <a href="#contact">Contacto</a>
     </nav>
     <div class="text">
       <h1>Soy <span class="name">Juan Daniel Guerra</span></h1>
@@ -50,19 +56,24 @@
         </a>
       </div>
     </div>
-    
+
   </header>
 
   <main>
-    <section class="about-me">
+    <section id="about-me" class="about-me" style="margin-bottom: 2rem;">
       <h2>Acerca de mi</h2>
       <div class="description">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, iure aliquid? Suscipit, necessitatibus. Quasi sed nam, dolor soluta nihil recusandae quibusdam eos optio itaque nesciunt nobis consequatur non, explicabo quod.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit eveniet dolorum ut, praesentium eos natus culpa assumenda libero perspiciatis at quo sit, asperiores quas quia? Dolores autem corrupti fugiat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, iure aliquid? Suscipit, necessitatibus.
+          Quasi sed nam, dolor soluta nihil recusandae quibusdam eos optio itaque nesciunt nobis consequatur non,
+          explicabo quod.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit eveniet dolorum ut, praesentium eos
+          natus culpa assumenda libero perspiciatis at quo sit, asperiores quas quia? Dolores autem corrupti fugiat.</p>
       </div>
-      <button>Descargar CV</button>
-      <div class="my-studies">
-        <h2 class="title" style="text-align:center">Mis estudios</h2>
+      <button>
+        <image src="./imag/arrow.svg" /> Descargar CV
+      </button>
+      <div class="my-studies" style="margin: 4rem 0;">
+        <h2 class="title" style="text-align:center; margin-bottom: 2rem;">Mis estudios</h2>
         <div class="container-cards">
           <div class="card">
             <img src="./imag/Tec.png" alt="img">
@@ -79,8 +90,8 @@
         </div>
       </div>
     </section>
-    <section class="my-habilities" style="text-align: center">
-      <h2>Mis habilidades</h2>
+    <section id="my-habilities" class="my-habilities" style="text-align: center">
+      <h2 style="margin-bottom: 2rem;">Mis habilidades</h2>
       <div class="hability">
         <div class="title">
           <h5>Web design</h5>
@@ -118,19 +129,19 @@
         </div>
       </div>
     </section>
-    <section class="experience">
-      <h2 style="text-align: center">Experiencia</h2>
-      <div class="container">    
+    <section id="experience" class="experience">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Experiencia</h2>
+      <div class="container">
         <div class="contain">
           <img src="./imag/Hootsuite.png" alt="">
           <span>Interactive design</span>
           <h5>1 año</h5>
-        </div>   
+        </div>
         <div class="contain">
           <img src="./imag/Google.png" alt="">
           <span>Interactive design</span>
           <h5>1 año</h5>
-        </div>   
+        </div>
         <div class="contain">
           <img src="./imag/Wizeline.png" alt="">
           <span>Interactive design</span>
@@ -148,17 +159,43 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2>Mi portafolio</h2>
+    <section id="portfolio" class="portfolio">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Mi portafolio</h2>
+      <div class="container">
+        <img src="./imag/Ejemplo2.png" alt="Ejmplo 2">
+        <img src="./imag/Ejemplo 3.png" alt="Ejmplo 3">
+        <img src="./imag/Ejemplo 4.png" alt="Ejmplo 4">
+        <img src="./imag/Ejemplo 1.png" alt="Ejmplo 1">
+      </div>
     </section>
-    <section>
-      <h2>Contacto</h2>
+    <section id="contact" class="contact">
+      <h2 style="text-align: center">Contacto</h2>
+      <div class="container">
+        <div class="contain">
+          <div>
+            <img src="./imag/phone.svg" alt="">
+          </div>
+          <h4>Numero de celular</h4>
+          <span>53344545647</span>
+        </div>
+        <div class="contain">
+          <div>
+            <img src="./imag/mail.svg" alt="">
+          </div>
+          <h4>Numero de celular</h4>
+          <span>53344545647</span>
+        </div>
+      </div>
     </section>
 
   </main>
 
+  <footer>
+    <h3>Juan Daniel</h3>
+    <span>Hecho con amor en Academlo</span>
+  </footer>
 
-  
 </body>
 <script src="./app.js"></script>
+
 </html>

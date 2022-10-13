@@ -25,6 +25,7 @@ header {
   background-repeat: no-repeat;
   padding-bottom: 3rem;
   position: relative;
+  background-position: center;
 }
 
 header .name {
@@ -256,8 +257,9 @@ main section {
 }
 
 .experience .container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -313,6 +315,7 @@ main section {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
+  gap: 40px;
 }
 
 .contact .container .contain {
